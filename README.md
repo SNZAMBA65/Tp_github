@@ -1,6 +1,6 @@
 # TP Git - Apprendre les branches
 
-Un petit projet pour s'entraîner sur Git. J'ai appris à créer des branches, faire des commits, fusionner le tout et pousser ça sur GitHub.
+Un petit projet pour s'entraîner sur Git. Le but est d'apprendre à créer des branches, faire des commits, fusionner le tout et pousser ça sur GitHub.
 
 ## Ce qu'il y a dans le projet
 
@@ -23,8 +23,7 @@ Et ça affiche quelque chose comme :
 Hello ! Il est 14:30:25.
 ```
 
-## Ce que j'ai appris
-
+## Ce qu'il faut retenir
 Au début, j'ai fait un fichier simple sur la branche `main`. Ensuite j'ai créé une branche `refonte` pour réorganiser le code et créer un module séparé. Une fois que c'était bon, j'ai fusionné tout ça dans `main` et nettoyé la branche `refonte`.
 
 Pas très compliqué finalement, mais c'est cool de voir comment Git gère tout ça !
