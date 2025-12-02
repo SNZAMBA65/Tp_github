@@ -1,63 +1,38 @@
-# TP Git - Manipulation des branches et fusion
+# TP Git - Apprendre les branches
 
-Ce projet est un exercice pratique sur l'utilisation de Git : gestion des branches, commits, fusion et synchronisation avec GitHub.
+Un petit projet pour s'entraîner sur Git. J'ai appris à créer des branches, faire des commits, fusionner le tout et pousser ça sur GitHub.
 
-## 📋 Objectifs du TP
+## Ce qu'il y a dans le projet
 
-- Créer et gérer des branches Git
-- Effectuer des commits
-- Fusionner des branches
-- Synchroniser avec un dépôt distant (GitHub)
+Le projet contient deux fichiers Python :
 
-## 📁 Structure du projet
+**code.py** : Le fichier principal qui affiche l'heure qu'il est en ce moment
 
-```
-Tp_github/
-│
-├── code.py       # Fichier principal qui affiche l'heure actuelle
-├── module.py     # Module contenant la fonction obtenir_temps()
-└── README.md     # Ce fichier
-```
+**module.py** : Un module que j'ai créé pour organiser le code proprement avec une fonction `obtenir_temps()`
 
-## 🚀 Fonctionnalités
+## Comment ça marche
 
-### `module.py`
-Contient une fonction `obtenir_temps()` qui retourne l'heure actuelle formatée.
-
-### `code.py`
-Utilise le module pour afficher un message avec l'heure actuelle.
-
-## 💻 Utilisation
-
-Pour exécuter le programme :
+C'est simple, il suffit de lancer :
 
 ```bash
 python code.py
 ```
 
-Résultat attendu :
+Et ça affiche quelque chose comme :
 ```
 Hello ! Il est 14:30:25.
 ```
 
-## 🔄 Workflow Git utilisé
+## Ce que j'ai appris
 
-1. Travail initial sur la branche `main`
-2. Création d'une branche `refonte` pour la modularisation
-3. Développement du module sur la branche `refonte`
-4. Fusion de `refonte` dans `main`
-5. Nettoyage des branches
+Au début, j'ai fait un fichier simple sur la branche `main`. Ensuite j'ai créé une branche `refonte` pour réorganiser le code et créer un module séparé. Une fois que c'était bon, j'ai fusionné tout ça dans `main` et nettoyé la branche `refonte`.
 
-## 🛠️ Technologies
+Pas très compliqué finalement, mais c'est cool de voir comment Git gère tout ça !
 
-- **Langage** : Python 3
-- **Versioning** : Git / GitHub
-- **Modules** : datetime (bibliothèque standard Python)
+## Installation
 
-## 👤 Auteur
+Rien de spécial à installer, juste Python 3. Le module `datetime` est déjà inclus dans Python.
 
-**SNZAMBA65**
+---
 
-## 📝 Notes
-
-Ce projet a été réalisé dans le cadre d'un TP sur Git pour apprendre les bonnes pratiques de versioning et de collaboration.
+Fait par Samir dans le cadre d'un TP sur Git
