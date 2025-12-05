@@ -13,7 +13,6 @@ Le projet contient deux fichiers Python :
 ## Comment ça marche
 
 C'est simple, il suffit de lancer :
-
 ```bash
 python code.py
 ```
@@ -56,7 +55,6 @@ Ce projet est un TP sur l'A/B Testing pour un site e-commerce. L'objectif était
 Le projet contient un notebook principal :
 
 **TP4_AB_Testing.ipynb** : Notebook complet pour le TP4, incluant :
-
 - Nettoyage et exploration des données
 - Simulation d'un test A/B par utilisateur
 - Calcul du KPI Add-to-Cart Rate pour chaque groupe
@@ -70,12 +68,35 @@ Le fichier **events.csv** est également inclus (ou doit être placé dans le m�
 ### Comment ça marche
 
 1. Activer l'environnement virtuel :
-
 ```bash
 source venv/Scripts/activate  # Windows Git Bash / Linux / MacOS
+```
 
+2. Installer les dépendances si ce n'est pas déjà fait :
+```bash
+pip install -r requirements.txt
+```
 
-Fin
+3. Ouvrir le notebook `TP4_AB_Testing.ipynb` dans VS Code ou Jupyter Notebook et exécuter les cellules dans l'ordre.
+
+4. Un PDF professionnel est généré automatiquement à la dernière cellule : `TP4_report_pro.pdf`.
+
+### Ce que j'ai appris
+
+- Préparer et filtrer un dataset réel pour un test A/B
+- Randomiser correctement par utilisateur
+- Calculer un KPI e-commerce et le comparer entre groupes
+- Effectuer un test statistique (Z-test) et interpréter la p-value
+- Prendre une décision produit basée sur les résultats
+- Créer des visualisations claires et un rapport PDF prêt à présenter
+
+### Installation
+
+**Prérequis :**
+- Python 3 (>=3.10 recommandé)
+- Modules Python : `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `tabulate`
+
+Rien de spécial à installer en dehors de ces modules.
 
 ---
 
