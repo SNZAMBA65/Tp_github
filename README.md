@@ -45,6 +45,36 @@ Du coup j'ai dû :
 - Choisir la version finale que je voulais garder
 - Valider le tout
 
+---
+
+## TP4 – A/B Testing avec RetailRocket
+
+Ce projet est un TP sur l'A/B Testing pour un site e-commerce. L'objectif était d'analyser un dataset réel, simuler un test A/B et prendre une décision produit basée sur des résultats statistiques.
+
+### Ce qu'il y a dans le projet
+
+Le projet contient un notebook principal :
+
+**TP4_AB_Testing.ipynb** : Notebook complet pour le TP4, incluant :
+
+- Nettoyage et exploration des données
+- Simulation d'un test A/B par utilisateur
+- Calcul du KPI Add-to-Cart Rate pour chaque groupe
+- Test statistique de comparaison de proportions (Z-test)
+- Analyse business pour recommander un design
+- Visualisations professionnelles (barplots, tableau résumé)
+- Export PDF final avec graphiques et tableau
+
+Le fichier **events.csv** est également inclus (ou doit être placé dans le même dossier) pour l'analyse.
+
+### Comment ça marche
+
+1. Activer l'environnement virtuel :
+
+```bash
+source venv/Scripts/activate  # Windows Git Bash / Linux / MacOS
+
+
 Fin
 
 ---

@@ -1,0 +1,50 @@
+#################################
+# Environnement virtuel Python
+#################################
+venv/
+env/
+.venv/
+ENV/
+
+#################################
+# Fichiers Python inutiles
+#################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+#################################
+# Jupyter Notebook
+#################################
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+#################################
+# OS / Editor files
+#################################
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+#################################
+# Fichiers temporaires / caches
+#################################
+*.tmp
+*.temp
+*.bak
+
+#################################
+# Anaconda (si utilisé)
+#################################
+conda-env/
