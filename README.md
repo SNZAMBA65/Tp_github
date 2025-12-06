@@ -1,48 +1,97 @@
-# TP Git - Apprendre les branches
+# Tp_github
 
-Un petit projet pour s'entraîner sur Git. J'ai appris à créer des branches, faire des commits, fusionner le tout et pousser ça sur GitHub.
+Un dépôt pour apprendre Git et GitHub à travers des exercices pratiques.
 
-## Ce qu'il y a dans le projet
+## Description
 
-Le projet contient deux fichiers Python :
+Ce projet contient une petite application Python qui affiche l'heure actuelle. Le but principal est de pratiquer les commandes Git de base : branches, commits, merge et résolution de conflits.
 
-**code.py** : Le fichier principal qui affiche l'heure qu'il est en ce moment
+## Installation
 
-**module.py** : Un module que j'ai créé pour organiser le code proprement avec une fonction `obtenir_temps()`
+Clonez le dépôt :
 
-## Comment ça marche
+```bash
+git clone https://github.com/SNZAMBA65/Tp_github.git
+cd Tp_github
+```
 
-C'est simple, il suffit de lancer :
+Aucune dépendance externe requise, juste Python 3.
+
+## Utilisation
+
 ```bash
 python code.py
 ```
 
-Et ça affiche quelque chose comme :
-```
-Hello ! Il est 14:30:25.
-```
+Affiche l'heure actuelle au format `HH:MM:SS`.
 
-## Ce que j'ai appris
+## Structure
 
-Au début, j'ai fait un fichier simple sur la branche `main`. Ensuite j'ai créé une branche `refonte` pour réorganiser le code et créer un module séparé. Une fois que c'était bon, j'ai fusionné tout ça dans `main` et nettoyé la branche `refonte`.
-
-Pas très compliqué finalement, mais c'est cool de voir comment Git gère tout ça !
-
-## Installation
-
-Rien de spécial à installer, juste Python 3. Le module `datetime` est déjà inclus dans Python.
+- `code.py` - Script principal
+- `module.py` - Module contenant la logique métier
+- `README.md` - Documentation
 
 ---
 
-## TP2 - Gestion des conflits
+## Exercices réalisés
 
-Dans un deuxième temps, j'ai géré les conflits Git. J'ai créé deux branches (`conflit-a` et `conflit-b`) qui modifiaient le même fichier différemment. Quand j'ai essayé de les fusionner, Git m'a dit "je sais pas laquelle choisir, débrouille-toi".
+### TP1 : Manipulation des branches, commits, push et fusion
 
-Du coup j'ai dû :
-- Ouvrir le fichier qui posait problème
-- Voir les marqueurs de conflit (`<<<<<<<`, `=======`, `>>>>>>>`)
-- Choisir la version finale que je voulais garder
-- Valider le tout
+#### Objectifs
+- Créer et gérer des branches Git
+- Effectuer des commits structurés
+- Fusionner des branches avec merge
+- Synchroniser avec GitHub
+
+#### Déroulement
+1. **Travail initial sur `main`** : Création du fichier `code.py` avec affichage simple de l'heure
+2. **Création de la branche `refonte`** : Refactorisation du code avec création d'un module séparé
+3. **Développement modulaire** : Ajout de `module.py` contenant la fonction `obtenir_temps()`
+4. **Fusion** : Merge de `refonte` dans `main` (fast-forward)
+5. **Nettoyage** : Suppression de la branche `refonte` après fusion
+
+#### Commandes clés utilisées
+```bash
+git checkout -b refonte
+git add .
+git commit -m "message"
+git merge refonte
+git push origin main
+```
+
+---
+
+### TP2 : Création et résolution d'un conflit de merge
+
+#### Objectifs
+- Comprendre l'origine des conflits Git
+- Identifier les marqueurs de conflit
+- Résoudre manuellement un conflit
+- Valider la résolution
+
+#### Déroulement
+1. **Création de deux branches divergentes** : `conflit-a` et `conflit-b` modifiant le même fichier différemment
+2. **Fusion de `conflit-a`** : Merge réussi dans `main`
+3. **Tentative de fusion de `conflit-b`** : Conflit détecté par Git
+4. **Résolution manuelle** : Édition du fichier pour choisir la version finale
+5. **Validation** : Commit de résolution et push
+
+#### Marqueurs de conflit rencontrés
+```
+<<<<<<< HEAD
+print("Version A du code")
+=======
+print("Version B du code")
+>>>>>>> conflit-b
+```
+
+#### Résolution appliquée
+Le conflit a été résolu en choisissant une version finale unifiée, puis validé avec :
+```bash
+git add code.py
+git commit -m "Résolution du conflit entre conflit-a et conflit-b"
+git push origin main
+```
 
 ---
 
@@ -100,4 +149,10 @@ Rien de spécial à installer en dehors de ces modules.
 
 ---
 
-Fait par Samir dans le cadre d'un TP sur Git
+## Auteur
+
+Samir NZAMBA (@SNZAMBA65)
+
+## Licence
+
+Projet éducatif sans licence spécifique.
